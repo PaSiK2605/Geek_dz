@@ -22,6 +22,13 @@ async def cmd_start(message: types.Message):
  await message.answer(f'Привет, {name}')
 
 
+#Хэндлер на команду /stop
+@dp.message(Command('stop'))
+async def cmd_stop(message: types.Message):
+ name = message.chat.first_name
+ await message.answer(f'Пока, {name}')
+
+
 async def main():
  await dp.start_polling(bot)
 
