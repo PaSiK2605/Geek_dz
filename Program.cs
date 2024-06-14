@@ -1,4 +1,3 @@
-﻿namespace attest;
 using System;
 
 class Program
